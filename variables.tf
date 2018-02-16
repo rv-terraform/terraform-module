@@ -8,8 +8,13 @@ variable location {
 variable resource_group_name {
     default = "myResourceGroup"
 }
-variable admin_user {
+
+variable adminuser {
     default = "venerari"
+}
+
+variable adminpassword {
+    default = "Thepassword123"
 }
 
 provider "azurerm" {
