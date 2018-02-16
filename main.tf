@@ -2,7 +2,7 @@ module mycompute {
     source = "Azure/compute/azurerm"
     resource_group_name = "${var.resource_group_name}"
     location = "${var.location}"
-    admin_user = "${var.adminuser}"
+    admin_username = "${var.adminuser}"
     admin_password = "${var.adminpassword}"
     vm_os_simple = "CentOS"
     remote_port = "22"
