@@ -5,6 +5,9 @@ variable client_secret {}
 variable location {
     default = "Canada East"
 }
+variable resource_group_name {
+    default = "myResourceGroup"
+}
 variable admin_user {
     default = "venerari"
 }
