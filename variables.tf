@@ -2,7 +2,7 @@ variable subscription_id {}
 variable tenant_id {}
 variable client_id {}
 variable client_secret {}
-variable access_location {
+variable location {
     default = "Canada East"
 }
 variable admin_user {
