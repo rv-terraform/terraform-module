@@ -1,7 +1,8 @@
 module mycompute {
     source = "Azure/compute/azurerm"
-    resource_group_name = "myResourceGroup"
+    resource_group_name = "${var.resource_group_name}"
     location = "${var.location}"
+    admin_user = "venerari"
     admin_password = "Thepassword123"
     vm_os_simple = "CentOS"
     remote_port = "22"
@@ -13,7 +14,7 @@ module mycompute {
 module "network" {
     source = "Azure/network/azurerm"
     location = "${var.location}"
-    resource_group_name = "myResourceGroup"
+    resource_group_name = "${var.resource_group_name}"
 }
 
 output "vm_public_name" {
