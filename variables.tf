@@ -6,7 +6,7 @@ variable location {
     default = "Canada East"
 }
 variable resource_group_name {
-    default = "myResourceGroup"
+    default = "myRG1"
 }
 
 variable adminuser {
