@@ -1,7 +1,7 @@
 module mycompute {
     source = "Azure/compute/azurerm"
     resource_group_name = "myResourceGroup"
-    location = "Canada East"
+    location = "${var.location}"
     admin_password = "Thepassword123"
     vm_os_simple = "CentOS"
     remote_port = "22"
@@ -12,7 +12,7 @@ module mycompute {
 
 module "network" {
     source = "Azure/network/azurerm"
-    location = "Canada East"
+    location = "${var.location}"
     resource_group_name = "myResourceGroup"
 }
 
